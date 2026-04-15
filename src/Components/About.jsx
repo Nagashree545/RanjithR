@@ -11,18 +11,18 @@ export default function About() {
             Ranjith Prince has established himself as a versatile and passionate artist in the Indian dance scene.
           </p>
           <p>
-            As a professional dancer, Ranjith has choreographed and performed over 500 songs, 
+            As a professional dancer, Ranjith has performed over 500 songs, 
             bringing traditional and contemporary movements to life on stage and screen. His journey includes 
             contributions as an assistant choreographer on 100+ productions.
           </p>
 
           <h3>Professional Highlights</h3>
           <ul className={styles.highlights}>
-            <li>100+ state-level competition 1st place wins</li>
+            <li>100+ competition 1st place wins</li>
             <li>Featured in the film "Mazzer" as an actor</li>
             <li>Written music for "Nansattu Hodaru", "Nan Preethi Sayadu", and "Karunada Veera"</li>
             <li>Over 1000 performances at events and functions</li>
-            <li>Specialized expertise in fire dance and tambourine dance</li>
+            <li>Specialized expertise in fire dance and Tubelight dance</li>
           </ul>
 
           <p>
@@ -34,8 +34,8 @@ export default function About() {
         <div className={styles.skills}>
           <div className={styles.skillCard}>
             <div className={styles.skillIcon}>💃</div>
-            <h4>Choreography</h4>
-            <p>500+ songs choreographed</p>
+            <h4>Dancer</h4>
+            <p>500+ songs As a Dancer</p>
           </div>
 
           <div className={styles.skillCard}>

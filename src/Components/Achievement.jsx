@@ -4,13 +4,13 @@ export default function Achievements() {
   const achievements = [
     {
       title: 'Competitive Excellence',
-      description: '100+ state-level competition 1st place wins',
+      description: '100+ competition in dance and got 1st place',
       icon: '🏆',
       stat: '100+'
     },
     {
-      title: 'Choreography Portfolio',
-      description: '500+ songs choreographed as a dancer',
+      title: 'Dancer Portfolio',
+      description: '500+ songs performed as a dancer',
       icon: '💫',
       stat: '500+'
     },

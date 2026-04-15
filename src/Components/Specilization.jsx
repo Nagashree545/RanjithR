@@ -7,11 +7,11 @@ export default function Specializations() {
       description: 'Master of the dynamic and visually stunning fire dance, combining traditional techniques with contemporary flair. This specialty showcases intense movements and precise control.',
       features: ['Dynamic Movements', 'Visual Impact', 'Traditional Roots', 'Contemporary Style']
     },
-   
+
     {
-      name: 'Choreography',
-      description: 'Creative choreographer with experience in designing movements for 500+ songs. Specializes in blending traditional Indian dance forms with modern expressions.',
-      features: ['Creative Design', 'Storytelling', 'Musical Interpretation', 'Ensemble Work']
+      name: 'Professional Dancer',
+      description: 'Skilled dancer with experience performing in 500+ songs and 1000+ stage shows. Known for expressive movements, strong stage presence, and versatility across traditional and modern dance styles.',
+      features: ['Stage Performance', 'Expressive Movement', 'Versatility', 'Rhythm & Timing']
     },
     {
       name: 'Film & Performance',

@@ -14,7 +14,7 @@ export default function Hero() {
           <p className={styles.subtitle}>Professional Dancer & Choreographer</p>
           <p className={styles.description}>
             14 years of artistic excellence with 1000+ performances across state-level competitions, 
-            events, and film productions. Specializing in fire dance and tambourine dance.
+            events, and film productions. Specializing in fire dance and Tubelight dance.
           </p>
   <div className={styles.stats}>
         <div className={styles.stat}>
@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
         <div className={styles.stat}>
           <h3>100+</h3>
-          <p>State Level Awards</p>
+          <p>Competition Level Awards</p>
         </div>
         <div className={styles.stat}>
           <h3>14</h3>
