@@ -1,0 +1,233 @@
+/* ============================================
+   COMPACT PREMIUM HERO SECTION
+   ============================================ */
+
+.hero {
+  min-height: 100vh;
+  padding-top: 60px;
+  background: #0a0a0a;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Background glow */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 165, 116, 0.15), transparent 70%);
+  border-radius: 50%;
+  filter: blur(70px);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(201, 166, 107, 0.1), transparent 70%);
+  border-radius: 50%;
+  filter: blur(60px);
+}
+
+/* ============================================
+   LAYOUT
+   ============================================ */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================
+   LEFT CONTENT
+   ============================================ */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Title */
+.title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #ffffff, #c9a66b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 0.85rem;
+  color: #c9a66b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+/* Description */
+.description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #c0c0c0;
+  margin-top: 1.5rem;
+  max-width: 550px;
+}
+
+/* ============================================
+   STATS
+   ============================================ */
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+  margin-top: 2.5rem;
+  padding-top: 1.8rem;
+  border-top: 1px solid rgba(201, 166, 107, 0.2);
+}
+
+.stat {
+  transition: 0.3s;
+}
+
+.stat:hover {
+  transform: translateX(5px);
+}
+
+.stat h3 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #c9a66b, #e8c998);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat p {
+  font-size: 0.7rem;
+  color: #909090;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+  padding: 14px 28px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Primary */
+.btnPrimary {
+  background: linear-gradient(135deg, #c9a66b, #d4a574);
+  color: #0a0a0a;
+  border: none;
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(201, 166, 107, 0.4);
+}
+
+/* Secondary */
+.btnSecondary {
+  background: transparent;
+  border: 1px solid rgba(201, 166, 107, 0.5);
+  color: #ffffff;
+}
+
+.btnSecondary:hover {
+  background: rgba(201, 166, 107, 0.1);
+  color: #c9a66b;
+  transform: translateY(-2px);
+}
+
+/* ============================================
+   IMAGE
+   ============================================ */
+
+.imageWrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.profileImg {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+.profileImg:hover {
+  transform: scale(1.03);
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .ctaButtons {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .stats {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
