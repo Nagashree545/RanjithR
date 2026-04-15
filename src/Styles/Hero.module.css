@@ -178,7 +178,7 @@
    IMAGE
    ============================================ */
 
-.imageWrapper {
+/* .imageWrapper {
   max-width: 420px;
   margin: 0 auto;
 }
@@ -192,6 +192,81 @@
 
 .profileImg:hover {
   transform: scale(1.03);
+} */
+ .imageWrapper {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLOW BACKGROUND */
+.imageWrapper::before {
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  background: radial-gradient(circle, rgba(201,166,107,0.25), transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+/* ROTATING BORDER RING */
+.imageWrapper::after {
+  content: '';
+  position: absolute;
+  width: 105%;
+  height: 105%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    #c9a66b,
+    transparent,
+    #d4a574,
+    transparent,
+    #c9a66b
+  );
+  animation: rotateRing 6s linear infinite;
+  z-index: 1;
+  filter: blur(2px);
+}
+
+@keyframes rotateRing {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* IMAGE */
+.profileImg {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 4px solid #0a0a0a;
+  transition: 0.4s;
+}
+
+/* FLOATING EFFECT */
+.imageWrapper:hover .profileImg {
+  transform: scale(1.05);
+}
+
+/* OPTIONAL FLOAT ANIMATION */
+.profileImg {
+  animation: floatImg 4s ease-in-out infinite;
+}
+
+@keyframes floatImg {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
 /* ============================================
